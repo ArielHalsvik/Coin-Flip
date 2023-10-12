@@ -1,0 +1,43 @@
+* {
+    text-align: center;
+    font-family: monospace;
+}
+
+h1 {
+    background-color: skyblue;
+    letter-spacing: 5px;
+    padding: 15px;
+}
+
+p {
+    font-size: 20px;
+    margin-bottom: 3px;
+}
+
+img {
+    width: 100%;
+    height: auto;
+    max-width: 500px;
+}
+
+#heads, #tails {
+    color: #d69788;
+    font-weight: bold;
+}
+
+#button1 {
+    width: 50px;
+    margin: 5px;
+    font-size: 100%;
+    margin-bottom: 10px;
+}
+
+#button2 {
+    padding: 15px;
+    margin-bottom: 10px;
+}
+
+.btn-group-vertical {
+    align-items: center;
+    white-space: nowrap;
+}
