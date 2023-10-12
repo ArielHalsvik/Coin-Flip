@@ -5,20 +5,26 @@ function randomNumber(min, max) {
     return Math.floor(Math.random() * (max - min + 1)) + min;
 };
 
+// "Reset" button function
+function reset() {
+    document.getElementById("coin").innerHTML = "";
+};
+
 // "Click me" button function
 function clickMe() {
     let results = randomNumber(1, 2);
     console.log(results);
-    // Heads
-    if (results === 1) {
-        document.getElementById("coin").innerHTML = "<img src='./img/heads.jpg'></img>";
-    // Tails
-    } else {
-        document.getElementById("coin").innerHTML = "<img src='./img/tails.jpg'></img>";
-    };
-};
+    
+    // Removes current image
+    reset()
 
-// "Reset" button function
-function reset() {
-    document.getElementById("coin").innerHTML = "";
+    setTimeout(() => {
+        // Heads
+        if (results === 1) {
+            document.getElementById("coin").innerHTML = "<img src='./img/heads.jpg'></img>";
+        // Tails
+        } else {
+            document.getElementById("coin").innerHTML = "<img src='./img/tails.jpg'></img>";
+        };
+    }, 100);
 };
